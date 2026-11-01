@@ -16,3 +16,17 @@ NIDS and HIDS describe where monitoring happens. Signature-based and anomaly-bas
 
 These are two different dimensions, not four competing architectures.
 
+Category	What it describes	Example
+NIDS	Monitoring network traffic	Detecting repeated connection attempts
+HIDS	Monitoring an individual host	Detecting unauthorized file modifications
+Signature-based	Detection methodology	Matching a known malicious payload
+Anomaly-based	Detection methodology	Detecting an unusual connection rate
+
+Our first implementation will be a network-focused IDS. We will not initially build operating-system-level HIDS functionality.
+
+
+#- Hybrid IDS Architecture 
+## NETWORK TRAFFIC: 
+incoming and outgoing packets 
+### Packets Capture Engine 
+Captures packets and extracts observable metadata
