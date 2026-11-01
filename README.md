@@ -30,3 +30,20 @@ Our first implementation will be a network-focused IDS. We will not initially bu
 incoming and outgoing packets 
 ### Packets Capture Engine 
 Captures packets and extracts observable metadata
+
+###. Traffic Analysis Module
+
+Transforms raw observations into meaningful features
+
+## . Detection Engine
+###-Signature Engine
+  Known attack patterns
+
+###Anomaly Engine
+
+Behavioral deviations
+Combines detection results and calculates risk
+
+## 4. Alert Management
+
+Severity, evidence, timestamps and notifications
